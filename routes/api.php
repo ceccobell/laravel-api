@@ -20,4 +20,4 @@ use App\Http\Controllers\Api\ProjectController;
 });
  */
 Route::get('/portfolio', [ProjectController::class, 'index']);
-Route::get('/project/{id}', [ProjectController::class, 'show']);
+Route::get('/project/slug/{slug}', [ProjectController::class, 'show']);
