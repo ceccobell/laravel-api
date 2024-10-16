@@ -19,4 +19,5 @@ use App\Http\Controllers\Api\ProjectController;
     return $request->user();
 });
  */
-Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('/portfolio', [ProjectController::class, 'index']);
+Route::get('/project/{id}', [ProjectController::class, 'show']);
